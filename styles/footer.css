@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0px 20px 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--orange);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer .image_link {
+  width: 40%;
+}
+
+.footer span,
+.footer span a {
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+}

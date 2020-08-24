@@ -1,0 +1,112 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .widget {
+    margin-bottom: 30px;
+  }
+
+  .banner-content {
+    padding-right: 30px;
+  }
+
+  .banner-title {
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+  }
+
+  .banner {
+    padding: 40px 0px;
+  }
+
+  .just-eat-logo {
+    width: 200px;
+    height: 48px;
+  }
+
+  .main-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 30px;
+    line-height: 1.2;
+  }
+
+  .sub-title {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .legend-labels .label {
+    font-size: 1rem;
+  }
+
+  .top-orders {
+    margin-bottom: 0;
+  }
+
+  .widgets {
+    margin-bottom: 30px;
+  }
+
+  .button-container {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner-title {
+    letter-spacing: -3px;
+    margin-bottom: 100px;
+  }
+
+  .banner {
+    padding: 30px 0px;
+  }
+
+  .banner-content {
+    padding-right: 60px;
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .map-container {
+    height: 100%;
+    max-height: 100%;
+    margin-bottom: 0;
+  }
+
+  .arrow-container img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .arrow-container img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

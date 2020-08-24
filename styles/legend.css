@@ -1,0 +1,37 @@
+.legend {}
+
+.legend-items {
+  display: flex;
+  align-items: center;
+}
+
+.legend-item {
+  width: 25%;
+  height: 25px;
+}
+
+.legend-item-1 {
+  background-color: var(--orange);
+}
+
+.legend-item-2 {
+  background-color: var(--orange-tint1);
+}
+
+.legend-item-3 {
+  background-color: var(--orange-tint2);
+}
+
+.legend-item-4 {
+  background-color: var(--orange-tint3);
+}
+
+.legend-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legend-labels .label {
+  font-size: 0.8rem;
+}

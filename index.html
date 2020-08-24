@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UK Sweethearts</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/dvu3nmy.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="./libs/css/awesomplete.css" />
+    <link rel="stylesheet" href="./libs/css/backdrop.css" /> -->
+    <link rel="stylesheet" href="./libs/css/base.min.css" />
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/css/choices.min.css" />
+
+    <!-- <link rel="stylesheet" href="./styles/arrow-down.css" /> -->
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/dropdown.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/legend.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/zoom-buttons.css" />
+
+    <!-- <script src="./libs/js/choices.min.js"></script> -->
+    <!-- <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="./libs/js/popper.min.js"></script>
+    <script src="./libs/js/topojson-client.min.js"></script> -->
+  </head>
+
+  <body>
+    <!-- Banner -->
+    <div class="container-fluid p-0">
+      <div class="banner">
+        <div class="banner-images">
+          <img src="./images/banner.png" class="banner-img" alt="banner" />
+        </div>
+        <div class="banner-content">
+          <div class="banner-title">
+            THE<br />'SWEET'<br />SPOT<br />OF THE<br />COUNTRY
+          </div>
+          <div class="just-eat-logo">
+            <img src="./images/just-eat-logo.svg" alt="JE Logo" />
+          </div>
+        </div>
+        <div class="arrow-container">
+          <img src="./images/arrow.svg" alt="arrow down" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="main-title">
+        Ever wondered which town, city or region has the sweetest palate across
+        the uk?
+      </div>
+
+      <div class="sub-title">
+        We have crunched the numbers to find out the 'sweetest' spot of the
+        country. <br />
+        Select a location below to see how sweet they are...
+      </div>
+
+      <div class="row widgets">
+        <div class="col-lg-8 col-md-7">
+          <div class="map-container widget">
+            <div class="zoom-buttons">
+              <button
+                class="btn btn-sm zoom-btn btn-circle zoom-in"
+                id="zomm_in"
+              >
+                +
+              </button>
+              <div class="zoom-slider-wrapper">
+                <input
+                  type="range"
+                  class="custom-range zoom-slider"
+                  id="zoom-slider"
+                />
+              </div>
+              <button
+                class="btn btn-sm zoom-btn btn-circle zoom-out"
+                id="zoom_out"
+              >
+                -
+              </button>
+            </div>
+            <div id="map" class="map"></div>
+            <div class="legend">
+              <div class="legend-items">
+                <div class="legend-item legend-item-1"></div>
+                <div class="legend-item legend-item-2"></div>
+                <div class="legend-item legend-item-3"></div>
+                <div class="legend-item legend-item-4"></div>
+              </div>
+              <div class="legend-labels">
+                <div class="label">More sweet orders</div>
+                <div class="label">Less sweet orders</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-5">
+          <div class="location-select widget">
+            <div class="choice-dropdown">
+              <select class="form-control" id="locations"></select>
+            </div>
+          </div>
+
+          <div class="sweetest-loc widget">
+            <div class="text-row text-value bordered" id="sweet-rank-loc">
+              LONDON
+            </div>
+
+            <div class="text-row">
+              IS THE
+            </div>
+
+            <div class="text-row text-value bordered" id="sweet-rank">
+              13<span class="suffix">TH</span>
+            </div>
+
+            <div class="text-row">
+              SWEETEST
+            </div>
+
+            <div class="text-row">
+              LOCATION OF
+            </div>
+
+            <div class="text-row">
+              THE COUNTRY
+            </div>
+          </div>
+
+          <div class="top-orders widget">
+            <div class="header">
+              TOP ORDERS
+            </div>
+            <div class="body">
+              <div class="order">
+                <div class="order-box">1<span class="suffix">st</span></div>
+                <div class="order-name" id="order-1">CHEESE CAKE</div>
+              </div>
+              <div class="order">
+                <div class="order-box">2<span class="suffix">nd</span></div>
+                <div class="order-name" id="order-2">ICE CREAM</div>
+              </div>
+              <div class="order">
+                <div class="order-box">3<span class="suffix">rd</span></div>
+                <div class="order-name" id="order-3">MILKSHAKES</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 button-container">
+          <a
+            type="button"
+            class="place-order-btn btn btn-primary"
+            href="https://www.just-eat.co.uk/takeaway/nearme/desserts"
+            target="_blank"
+          >
+            PLACE YOUR ORDER
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid footer">
+      <a href="https://just-eat.co.uk" class="image_link">
+        <img src="./images/footer.svg" alt="Just Eat" />
+      </a>
+      <span
+        >©2020&nbsp;<a href="https://just-eat.co.uk/">Just-eat.co.uk</a>&nbsp;
+        Limited. All Rights Reserved</span
+      >
+    </footer>
+
+    <script src="./scripts/uk-map.js"></script>
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
